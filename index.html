@@ -12,16 +12,16 @@
     --cloud:    #F4F0E8;
     --cream:    #EAE4D6;
     --cream2:   #D8D1C2;
-    --champagne:#9A7E42;
-    --champlt:  #B8A06A;
-    --sage:     #4A5F40;
-    --sagedark: #324030;
-    --sagemid:  #7A8F6E;
+    --champagne:#8A6E36;
+    --champlt:  #A08850;
+    --sage:     #3E5034;
+    --sagedark: #283326;
+    --sagemid:  #5E7350;
     --sagepale: #C8D9BC;
     --ivory:    #FAF7F0;
-    --dark:     #030201;
-    --mid:      #110C07;
-    --muted:    #261E12;
+    --dark:     #000000;
+    --mid:      #0A0704;
+    --muted:    #1A140C;
     --white:    #FEFCF8;
   }
 
@@ -867,15 +867,6 @@
     color: var(--sage);
     font-weight: 400;
   }
-  .sov-date {
-    font-family: 'Jost', sans-serif;
-    font-weight: 200;
-    font-size: 11px;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 1.6rem;
-  }
   .sov-hearts {
     margin-top: 1.8rem;
     font-size: 22px;
@@ -890,39 +881,41 @@
   .sov-close-btn {
     margin-top: 0;
     font-family: 'Jost', sans-serif;
-    font-weight: 300;
-    font-size: 11px;
+    font-weight: 400;
+    font-size: 12px;
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--white);
-    background: rgba(106,127,94,0.35);
-    border: 1px solid rgba(255,252,248,0.35);
+    background: var(--sage);
+    border: 1px solid var(--sage);
     border-radius: 2px;
-    padding: 0.85rem 2.5rem;
+    padding: 0.95rem 2.5rem;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: background 0.2s, color 0.2s, border-color 0.2s;
   }
-  .sov-close-btn:hover { background: rgba(106,127,94,0.55); }
+  .sov-close-btn:hover { background: var(--sagedark); border-color: var(--sagedark); }
 
   .sov-verse {
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
-    font-size: clamp(14px, 3.6vw, 17px);
-    color: var(--mid);
-    max-width: 420px;
-    line-height: 1.6;
-    margin: 1.4rem auto 0;
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 400;
+    color: var(--dark);
+    max-width: 480px;
+    line-height: 1.55;
+    margin: 1.8rem auto 0;
     text-align: center;
-    padding-top: 1.2rem;
-    border-top: 1px solid rgba(154,126,66,0.25);
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(154,126,66,0.35);
   }
   .sov-verse-ref {
     display: block;
-    margin-top: 0.5rem;
-    font-size: 12px;
-    letter-spacing: 2px;
+    margin-top: 0.7rem;
+    font-size: 14px;
+    letter-spacing: 2.5px;
     font-style: normal;
-    color: var(--muted);
+    font-weight: 400;
+    color: var(--sagedark);
   }
   .sov-btn-row {
     display: flex;
@@ -933,10 +926,10 @@
   }
   .sov-btn-outline {
     background: transparent;
-    border: 1px solid rgba(255,252,248,0.5);
-    color: var(--white);
+    border: 1px solid var(--sage);
+    color: var(--sagedark);
   }
-  .sov-btn-outline:hover { background: rgba(255,252,248,0.12); }
+  .sov-btn-outline:hover { background: rgba(74,95,64,0.10); color: var(--dark); }
 </style>
 </head>
 <body>
@@ -1479,7 +1472,6 @@
       Tu confirmación ha llegado hasta las nubes.<br>
       <span class="sov-name">Nos vemos el 29 de agosto.</span>
     </div>
-    <div class="sov-date">Sábado · 29 · 08 · 2026</div>
     <div class="sov-verse">
       «Y ahora permanecen la fe, la esperanza y el amor,<br>
       estos tres; pero el mayor de ellos es el amor.»
