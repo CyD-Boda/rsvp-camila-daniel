@@ -12,16 +12,16 @@
     --cloud:    #F4F0E8;
     --cream:    #EAE4D6;
     --cream2:   #D8D1C2;
-    --champagne:#8A6E36;
-    --champlt:  #A08850;
-    --sage:     #3E5034;
-    --sagedark: #283326;
-    --sagemid:  #5E7350;
+    --champagne:#785C28;
+    --champlt:  #8C7440;
+    --sage:     #344530;
+    --sagedark: #1E2820;
+    --sagemid:  #4E6342;
     --sagepale: #C8D9BC;
     --ivory:    #FAF7F0;
     --dark:     #000000;
-    --mid:      #0A0704;
-    --muted:    #1A140C;
+    --mid:      #060402;
+    --muted:    #14100A;
     --white:    #FEFCF8;
   }
 
@@ -897,16 +897,19 @@
 
   .sov-verse {
     font-family: 'Cormorant Garamond', serif;
-    font-style: italic;
-    font-size: clamp(20px, 5vw, 28px);
-    font-weight: 400;
-    color: var(--dark);
     max-width: 480px;
-    line-height: 1.55;
     margin: 1.8rem auto 0;
     text-align: center;
     padding-top: 1.6rem;
     border-top: 1px solid rgba(154,126,66,0.35);
+  }
+  .sov-verse-text {
+    display: block;
+    font-style: italic;
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 400;
+    color: var(--dark);
+    line-height: 1.55;
   }
   .sov-verse-ref {
     display: block;
@@ -914,7 +917,7 @@
     font-size: 14px;
     letter-spacing: 2.5px;
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     color: var(--sagedark);
   }
   .sov-btn-row {
@@ -1472,11 +1475,7 @@
       Tu confirmación ha llegado hasta las nubes.<br>
       <span class="sov-name">Nos vemos el 29 de agosto.</span>
     </div>
-    <div class="sov-verse">
-      «Y ahora permanecen la fe, la esperanza y el amor,<br>
-      estos tres; pero el mayor de ellos es el amor.»
-      <span class="sov-verse-ref">— 1 Corintios 13:13 —</span>
-    </div>
+    <div class="sov-verse"><span class="sov-verse-text">«Y ahora permanecen la fe, la esperanza y el amor, estos tres; pero el mayor de ellos es el amor.»</span><span class="sov-verse-ref">— 1 Corintios 13:13 —</span></div>
     <div class="sov-hearts">🌿 🤍 🌿</div>
     <div class="sov-btn-row">
       <button class="sov-close-btn sov-btn-outline" onclick="resetForm()">Enviar otra confirmación</button>
